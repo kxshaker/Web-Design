@@ -13,6 +13,10 @@ body {
 
 }
 
+p {
+    font-size: 1.5rem;
+}
+
 /* HEADER STYLES */
 .header {
     display: grid;
@@ -24,7 +28,7 @@ body {
     padding: 10% 0 0 50%;
     margin: 5%;
     font-family: Audiowide;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 
 }
 
@@ -44,25 +48,42 @@ body {
     border-radius: 2px;
     text-decoration: none;
     padding: 5% 20%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Audiowide;
     color: rgba(255, 255, 240, 0.568);
+    font-size: 1.5rem;
+}
+
+.button:hover {
+    background-color: rgba(10, 179, 156, 0.651);
+    border: solid 2px rgba(10, 179, 156, 0.788);
+    border-radius: 5px;
+
 }
 
 /* CONTENT STYLES */
 .content {
     display: grid;
     grid-template-columns: 4% 25% 42% 25% 4%;
-    
+
     /* padding: 5% 0 0 5%; */
 
 }
-.leftside{
-    padding: 0 0 0 25%;
+.centerimg{
+    text-align: center;
+    padding-top: 15%;
+    transform: scale(2, 2);
+    position: relative;
+    z-index: -2;
 }
 
-.hello, .video{
+.leftside {
+    padding: 15% 0 0 25%;
+}
+
+.hello,
+.video {
     color: ivory;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 300;
     padding-bottom: 5%;
 }
@@ -71,33 +92,170 @@ h1 {
     color: ivory;
     font-size: 5rem;
     font-family: Audiowide;
+    padding: 25px 0 0 0;
 }
-.discription{
+
+.discription {
     color: ivory;
-    font-family: montserrat;
-    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     line-height: 1.5;
 }
-.takeatour{
+
+.takeatour {
     margin-top: 20%;
 }
-.video{
+
+.video {
     padding: 30% 0 10% 0;
     text-align: left;
 }
-.videoimg{
+
+.videoimg {
     position: absolute;
     width: 20%;
     border-radius: 5px;
-    
+    padding-right: 1%;
+
+}
+
+.rightbar {
+    padding: 100% 0 0 0;
+}
+.rightbar img {
+    width: 70%;
+    display: block;
+    padding-bottom: 20%;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+#share{
+    width: 30%;
+    padding-top: 100%;
+}
+
+.footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.endline {
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    border-style: solid none none;
+    border-color: rgba(10, 179, 156, 0.514);
+    display: inline-block;
+    border-width: 2px;
+}
+
+/* FOOTER SEXCTION */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.footerpart1 {
+    padding-left: 17%;
+    padding-right: 25%;
+    display: grid;
+    grid-template-columns: 22% 26% 26% 26%;
+}
+
+.footerpart2 {
+    padding-right: 17%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.footer-piece1 {
+    border-style: none solid none none;
+    border-color: rgba(211, 211, 211, 0.712);
+    border-width: 1px;
+    margin-right: 20%;
+}
+.footer-piece5 {
+    border-style: none solid none none;
+    border-color: rgba(211, 211, 211, 0.712);
+    border-width: 1px;
+    margin-right: 20%;
+}
+.footer-piece{
+    margin-left: 5%;
+}
+
+@media(max-width: 1600px) {
+p{
+    font-size: 1rem;
+}
+.rightbar{
+    padding: 0;
+    margin: 0;
+}
+.centerimg{
+    transform: scale(1, 1);
+    text-align: center;
+}
+.share{
+    padding: 0;
+}
 }
 
 
 
-@media(max-width: 600px){
-    .header{
-        grid-template-columns: max-content ;
+@media(max-width: 1028px) {
+
+    .logo,
+    .logo a,
+    .content,
+    .leftside {
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
+    .logo {
+        padding: 0 0 50px 0;
+        font-size: 3rem;
+    }
 
+    .content,
+    h1,
+    .header,
+    .video {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    p,
+    .video {
+        font-size: 2rem;
+        padding: 50px;
+    }
+
+    .videoimg {
+        width: 50%;
+        position: inherit;
+    }
+    .rightbar img, #share {
+        width: 64px;
+        display: inline-block;
+        padding-bottom: 20%;
+        text-align: center;
+        margin: auto;
+        padding-top:0;
+    }
+    .centerimg{
+        text-align: center;
+        padding-top: 15%;
+        position: absolute;
+        z-index: -2;
+    }
 }
