@@ -1,0 +1,126 @@
+/* GLOBAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url(../imgs/background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 1rem;
+    color: ivory;
+}
+
+
+.button {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: ivory;
+    font-weight: 100;
+    border-color: ivory;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+.navbar,
+.navbar-ext,
+.rightfoot {
+    text-align: center;
+    background-color: rgba(0, 29, 48, 0.411);
+    padding: 0;
+    margin: 0;
+}
+.navbar-ext{
+
+}
+
+
+h3{
+    font-family: Audiowide;
+    font-size: 2rem;
+}
+
+
+/* HEADER STYLES */
+
+.logo {
+    padding: 3% 0 0 10%;
+}
+.welcome{
+    font-size: 1.5rem;
+}
+
+.signup {
+    padding: 3% 10% 0 0;
+}
+.iconimg {
+    width: 70%;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.iconimg1 {
+    padding-top: 50%;
+    width: 40%;
+    text-align: center;
+
+}
+
+.iconimg2 {
+    padding: 350% 0 0 0;
+    width: 70%;
+    text-align: center;
+}
+.iconimg5, .iconimg6{
+    padding-top:170%;
+    width: 70%;
+    text-align: center;
+}
+
+.header,
+.footer {
+
+    display: grid;
+    grid-template-columns: 96% 4%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 56% 40% 4%;
+}
+.works{
+    position: absolute;
+    width: 20%;
+    padding: 10% 0 0 13%;
+border-radius: 20px 20px 20px 20px;}
+
+.titlebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftside {
+    padding: 7% 0 0 10%
+}
+
+
+
+.leftside h1 {
+    padding: 2% 0 5% 0;
+    font-size: 7rem;
+}
+
+.cobyright{
+    padding: 10% 0 0 10%;
+    font-size: 1rem;
+    display: inline-block;
+}
+
