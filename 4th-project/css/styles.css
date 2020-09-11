@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#header {
+    background-image: url(../imgs/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Audiowide;
+    font-size: 2rem;
+    color: hotpink;
+    margin: 50px 0 0 100px;
+}
+
+/* .navbar{
+    position: fixed;
+    right:65px;
+    top: 50px;
+    background-color: hotpink;
+    height: 100vh;
+    width: 350px;
+}
+
+.navbar a img{
+    width: 50px;
+}
+.navbar ul, .navbar a{
+    text-decoration: none;
+    list-style: none;
+} */
+
+.home {
+    width: 350px;
+    margin: 200px 0 0 100px;
+}
+
+.home h2 {
+    font-size: 1.5rem;
+}
+
+.home p {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header .home .box,
+#about-us .box {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: hotpink;
+    margin: 20px 0px;
+}
+
+.lines {
+    line-height: 8px;
+    margin: 20px 0px;
+}
+
+.line-1 {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: hotpink;
+}
+
+.line-2 {
+    display: inline-block;
+    height: 1px;
+    width: 80px;
+    background-color: hotpink;
+}
+
+.line-3 {
+    display: inline-block;
+    height: 1px;
+    width: 45px;
+    background-color: hotpink;
+}
+
+.button {
+    border-color: hotpink;
+    background-color: inherit;
+    padding: 10px 30px;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    border-width: 1px;
+}
+
+#about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.left-side {
+    flex-basis: 50%;
+}
+
+.left-side img {
+    width: 100%;
+
+}
+
+.right-side {
+    flex-basis: 50%;
+    text-align: right;
+    margin: 0 100px 0 0;
+    max-width: 500px;
+}
+
+.right-side h3 {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#card-deck {
+    margin: 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 100px;
+}
+
+.card {
+    flex-basis: 25%;
+}
+
+.card img {
+    width: 100px;
+}
+
+.ending {
+    text-align: center;
+
+}
+
+#card-deck .lines,
+#card-deck .btn {
+    display: inline-block;
+    text-align: right;
+}
+
+.container-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.form-leftside {
+    flex-basis: 50%;
+    margin-left: 100px;
+
+}
+
+.form-rightside {
+    flex-basis: 50%;
+}
+
+.ending .lines {
+    padding-top: 20px;
+
+}
+
+#form img {
+    width: 100%;
+}
+
+#form h2 {
+    margin-bottom: 48px;
+}
+
+#form input {
+    border-color: hotpink;
+    padding: 10px 154px 10px 0;
+    margin: 1%;
+    border-width: 1px;
+    text-align: left;
+}
+
+.form-btn {
+    border-color: hotpink;
+    padding: 10px 50px;
+    
+    border-width: 1px;
+    cursor: pointer;
+    background-color: inherit;
+    flex-basis: 48%;
+}
+
+#form .lines {
+    margin: 1%;
+}
+
+.button:hover,
+.form-btn:hover {
+    background-color: hotpink;
+}
+.vlex{
+    width: 330px;
+    display: flex;
+    justify-content: space-evenly;
+}
